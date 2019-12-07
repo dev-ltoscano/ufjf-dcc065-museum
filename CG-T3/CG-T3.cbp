@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CG-T3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/CG-T2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-std=gnu++11" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="GL" />
+					<Add library="glut" />
+					<Add library="GLU" />
+					<Add library="png" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/CG-T2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=gnu++11" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="GL" />
+					<Add library="glut" />
+					<Add library="GLU" />
+					<Add library="png" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/collision/BoundingBox.h" />
+		<Unit filename="include/collision/Collider.h" />
+		<Unit filename="include/drawable/Axis.h" />
+		<Unit filename="include/drawable/Drawable.h" />
+		<Unit filename="include/drawable/Grid.h" />
+		<Unit filename="include/material/Material.h" />
+		<Unit filename="include/navigator/NavigatorCamera.h" />
+		<Unit filename="include/obj/glcWavefrontObject.h" />
+		<Unit filename="include/object/Brick.h" />
+		<Unit filename="include/object/Cylinder.h" />
+		<Unit filename="include/object/Ground.h" />
+		<Unit filename="include/object/Object.h" />
+		<Unit filename="include/object/ObjectGroup.h" />
+		<Unit filename="include/object/Wall.h" />
+		<Unit filename="include/player/Player.h" />
+		<Unit filename="include/ply/PLYObject.h" />
+		<Unit filename="include/ply/PLYReader.h" />
+		<Unit filename="include/primitive/Line.h" />
+		<Unit filename="include/primitive/Point.h" />
+		<Unit filename="include/primitive/Primitive.h" />
+		<Unit filename="include/primitive/Quad.h" />
+		<Unit filename="include/primitive/RGBColor.h" />
+		<Unit filename="include/primitive/Triangle.h" />
+		<Unit filename="include/primitive/Vertex3D.h" />
+		<Unit filename="include/scene/Museum.h" />
+		<Unit filename="include/scene/Scene.h" />
+		<Unit filename="include/texture/glcTexture.h" />
+		<Unit filename="src/collision/BoundingBox.cpp" />
+		<Unit filename="src/collision/Collider.cpp" />
+		<Unit filename="src/drawable/Axis.cpp" />
+		<Unit filename="src/drawable/Drawable.cpp" />
+		<Unit filename="src/drawable/Grid.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/material/Material.cpp" />
+		<Unit filename="src/navigator/NavigatorCamera.cpp" />
+		<Unit filename="src/obj/glcWavefrontObject.cpp" />
+		<Unit filename="src/object/Brick.cpp" />
+		<Unit filename="src/object/Cylinder.cpp" />
+		<Unit filename="src/object/Ground.cpp" />
+		<Unit filename="src/object/Object.cpp" />
+		<Unit filename="src/object/ObjectGroup.cpp" />
+		<Unit filename="src/object/Wall.cpp" />
+		<Unit filename="src/player/Player.cpp" />
+		<Unit filename="src/ply/PLYObject.cpp" />
+		<Unit filename="src/ply/PLYReader.cpp" />
+		<Unit filename="src/primitive/Line.cpp" />
+		<Unit filename="src/primitive/Point.cpp" />
+		<Unit filename="src/primitive/Primitive.cpp" />
+		<Unit filename="src/primitive/Quad.cpp" />
+		<Unit filename="src/primitive/Triangle.cpp" />
+		<Unit filename="src/primitive/Vertex3D.cpp" />
+		<Unit filename="src/scene/Scene.cpp" />
+		<Unit filename="src/texture/glcTexture.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
